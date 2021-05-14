@@ -1,0 +1,45 @@
+<!--HTML file for Tax Computation Program-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="LE4_SELGAS.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Computation</title>
+</head>
+<body>
+    <!--App header-->
+    <div class="appname">
+        Application for Tax Computation
+    </div>
+
+    <!--Area of input and results-->
+    <div class="main">
+        <form name="taxData">
+            <div class="category"> Monthly Income <br><br><input type="text" id="income"></div> 
+            <div class="category"> Number of Dependents <br><br><input type="text" id="dependents"></div> <br>
+            <div class="category-d"> 
+                Government Worker? 
+                <input type="radio" id="yes" name="govwork" value="yes"> Yes 
+                <input type="radio" id="no" name="govwork" value="no"> No <br>
+            </div>
+            <br>
+            <button onclick="getTax()" type="button">submit</button>
+            <button>reset</button>
+        </form>
+        <br>
+        <!--Display tax payable-->
+        <div class="results">Tax payable<br><span>P<span id="tax"></span></span></div>
+    </div>
+
+    <!--Description of program + programmer's name-->
+    <div class="description">
+        <br>This is a program for computing the payable taxes of earning Filipino individuals and business organizations. User will be asked to provide their monthly income, number of dependents, and whether they are a government worker or not. Afterwards, upon clicking Submit, the program will calculate their payable tax and display it.
+        <br><br>
+        Programmer: Czarina Julia Selgas
+    </div>
+
+    <script src="LE4_Selgas.js"></script>
+</body>
+</html>
